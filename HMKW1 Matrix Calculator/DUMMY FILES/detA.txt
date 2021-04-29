@@ -1,0 +1,5 @@
+# ./run -d A.txt
+# Version = 1.0.2, Revision date = 26-Oct-2020
+matrix 1 1
+11	
+end

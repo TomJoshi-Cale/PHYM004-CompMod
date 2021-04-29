@@ -1,0 +1,6 @@
+# ./mat_gen --rows 2 --cols 2 --file 2mat.txt 
+# Version = 1.0.3, Revision date = 16-Oct-2019
+matrix 2 2
+0.813291693019	0.18341637551	
+0.547310722781	0.409208229002	
+end

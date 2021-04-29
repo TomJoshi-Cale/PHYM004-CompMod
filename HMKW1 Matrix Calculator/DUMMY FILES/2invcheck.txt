@@ -1,0 +1,6 @@
+# ./run -m 2mat.txt 2inv.txt
+# Version = 1.0.2, Revision date = 26-Oct-2020
+matrix 2 2
+1	-4.89275286952e-13	
+2.00650607241e-12	0.999999999999	
+end

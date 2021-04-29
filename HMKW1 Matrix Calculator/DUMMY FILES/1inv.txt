@@ -1,0 +1,5 @@
+# ./run -i 1mat.txt
+# Version = 1.0.2, Revision date = 26-Oct-2020
+matrix 1 1
+1.22957114721	
+end
