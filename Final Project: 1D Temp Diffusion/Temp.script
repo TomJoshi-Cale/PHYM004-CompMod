@@ -1,0 +1,21 @@
+#Temp.script
+if (termtype eq 'qt') {
+	set terminal termtype enhanced font "Arial, 12"
+} else {
+	set terminal termtype
+}
+
+if (type == 0) {
+	set title "Temperature diffusion for an Egg"
+	set key left autotitle columnheader
+} else {
+	set title "Temperature diffusion for a Rod"
+	set key right autotitle columnheader
+}
+set xlabel "r [cm]"
+set ylabel "Temperature [K]"
+stats filename nooutput
+N = STATS_columns
+plot for [i=2:N] filename u 1:i w l
+pause -1
+exit
