@@ -1,0 +1,19 @@
+#plot.script
+set terminal qt enhanced font "Arial, 12"
+set zrange [-1:1]
+set xlabel "X (AU)"
+set ylabel "Y (AU)"
+set zlabel "Z (AU)" offset -2
+set tics font ",9"
+splot 'OrbitalData.dat' using 2:3:4 w p pt 3 ps 4 lc rgb "yellow" title "Sun", \
+'OrbitalData.dat' using 5:6:7 w l lw 2 lt rgb "light-grey" title "Mercury", \
+'OrbitalData.dat' using 8:9:10 w l lw 2 lt rgb "orange" title "Venus", \
+'OrbitalData.dat' using 11:12:13 w l lw 2 lt rgb "blue" title "Earth", \
+'OrbitalData.dat' using 14:15:16 w l lw 2 lt rgb "red" title "Mars", \
+'OrbitalData.dat' using 17:18:19 w l lw 2 lt rgb "orange" title "Jupiter", \
+'OrbitalData.dat' using 20:21:22 w l lw 2 lt rgb "goldenrod" title "Saturn", \
+'OrbitalData.dat' using 23:24:25 w l lw 2 lt rgb "skyblue" title "Uranus", \
+'OrbitalData.dat' using 26:27:28 w l lw 2 lt rgb "aquamarine" title "Neptune", \
+'OrbitalData.dat' using 29:30:31 w l lw 1 lt rgb "dark-grey" title "Moon"
+pause -1
+exit
